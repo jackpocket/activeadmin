@@ -157,7 +157,7 @@ module ActiveAdmin
         end
 
         def default_blank_slate_link
-          link_to(I18n.t("active_admin.blank_slate.link"), new_resource_path)
+          link_to(I18n.t("active_admin.blank_slate.link"), new_resource_path, class: "button button-primary")
         end
       end
     end
