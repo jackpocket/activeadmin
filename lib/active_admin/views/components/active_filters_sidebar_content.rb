@@ -18,13 +18,15 @@ module ActiveAdmin
       def scope_block(current_scope)
         return unless current_scope
 
-        h4 I18n.t("active_admin.search_status.current_scope"), style: "display: inline"
-        b scope_name(current_scope), class: "current_scope_name"
+        para do
+          span I18n.t("active_admin.search_status.current_scope")
+          b scope_name(current_scope), class: "current_scope_name"
+        end
       end
 
       def filters_list(active_filters, active_scopes)
-        div style: "margin-top: 10px" do
-          h4 I18n.t("active_admin.search_status.current_filters"), style: "margin-bottom: 10px"
+        div do
+          span I18n.t("active_admin.search_status.current_filters")
           ul do
             if active_filters.filters.blank? && active_scopes.blank?
               li I18n.t("active_admin.search_status.no_current_filters")
