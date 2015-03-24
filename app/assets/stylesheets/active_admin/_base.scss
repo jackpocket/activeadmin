@@ -21,12 +21,8 @@
   @import "./components/links";
   @import "./components/pagination";
   @import "./components/panels";
-  @import "./components/columns";
-  @import "./components/scopes";
   @import "./components/status_tags";
   @import "./components/table_tools";
-  @import "./components/index_list";
-  @import "./components/unsupported_browser";
   @import "./components/tabs";
   @import "./pages/logged_out";
   @import "./structure/footer";
@@ -44,11 +40,12 @@
   }
 
   body {
-    @include sans-family;
-    line-height: 1.5;
-    font-size: 72%;
     background: $body-background-color;
     color: $text-color;
+    font-family: $body-font-family;
+    font-size: $body-font-size;
+    font-weight: $body-font-weight;
+    line-height: $line-height-base;
   }
 }
 
