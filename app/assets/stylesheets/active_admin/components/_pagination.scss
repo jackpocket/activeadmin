@@ -43,12 +43,17 @@
 }
 
 .comments {
-  .pagination {
-    float: left;
-    margin-bottom: 30px;
-  }
+  .pagination,
   .pagination_information {
-    float: left;
-    color: #000;
+    float: none;
+  }
+
+  .pagination {
+    margin-bottom: 30px;
+    margin-left: 0;
+  }
+
+  .pagination_information {
+    color: $text-color;
   }
 }
